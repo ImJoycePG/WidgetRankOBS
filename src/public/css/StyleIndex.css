@@ -9,21 +9,50 @@ html {
     content: '';
 }
 
-.rankPlayer {
+
+.cardContainer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 300px;
 }
 
-.rankImage {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 10px;
-    margin-right: 5px;
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10px;
 }
 
 .rankText {
     color: white;
+    text-align: center;
+    font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
-    margin-left: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.rankImage {
+    width: 64px;
+    height: 64px;
+}
+
+.progressContainer {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#progressBar {
+    margin: 3.5px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#progress-width {
+    text-align: right;
+    padding-right: 10px;
 }
